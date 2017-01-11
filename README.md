@@ -21,6 +21,6 @@ Firefox 浏览器安装 GreaseMonkey 后，点击下载链接会直接提示安�
 ## Bookmarklet 模式
 将这个链接 [教务处一键修复][1] 拖入或加入书签栏中，每次打开教务处遇到问题的页面，点击一下该书签即修复。
 
-[1]: <javacript:(function() {var replacer = document.createElement("script"); replacer.innerHTML = "function hidemenu(main, menuid){ var element = document.getElementById(menuid); element.style.cssText = 'visibility: hidden;';} function showmenu(main, menuid) { var switcher = document.getElementById(main); var element = document.getElementById(menuid); element.style.cssText = 'visibility: visible; top: 84px; left: ' + switcher.offsetLeft + 'px;';}" document.body.insertBefore(replacer, document.body.lastChild); })();>
+[1]: javacript:(function() {var replacer = document.createElement("script"); replacer.innerHTML = "function hidemenu(main, menuid){ var element = document.getElementById(menuid); element.style.cssText = 'visibility: hidden;';} function showmenu(main, menuid) { var switcher = document.getElementById(main); var element = document.getElementById(menuid); element.style.cssText = 'visibility: visible; top: 84px; left: ' + switcher.offsetLeft + 'px;';}" document.body.insertBefore(replacer, document.body.lastChild); })();
 
 ![](https://github.com/fenprace/Patch-of-BITJWC/raw/master/screenshot.png)
