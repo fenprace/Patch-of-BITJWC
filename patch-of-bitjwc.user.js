@@ -10,6 +10,7 @@
 // @include       http://10.5.2.80/*
 // ==/UserScript==
 
+(function() {
 var replacer = document.createElement("script");
 
 replacer.innerHTML = "\
@@ -22,9 +23,10 @@ function showmenu(main, menuid) {\
   var switcher = document.getElementById(main);\
   var element = document.getElementById(menuid);\
   element.style.cssText =\
-    'visibility: visible; top: 70px; left: '\
+    'visibility: visible; top: 84px; left: '\
     + switcher.offsetLeft\
     + 'px;';\
 }"
 
 document.body.insertBefore(replacer, document.body.lastChild);
+})();
